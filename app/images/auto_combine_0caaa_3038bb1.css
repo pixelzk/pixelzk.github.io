@@ -1157,11 +1157,16 @@ body {
     width: 100%;
     height: 100%
 }
+.app-no-banner1 {
+    padding: 0;
+    background: #fff;
+    height: 30px
+}
 
 .app-no-banner {
     padding: 0;
     background: #fff;
-    height: 40px
+    height: 1px
 }
 
 .app-no-banner2 {
@@ -1177,25 +1182,48 @@ body {
 .app1 {
     text-align: center;
     position: relative;
-    margin-top: -30px;
+    margin-top: 0px;
     z-index: 1;
-    padding: 13px 13px
+    padding: 13px 13px;
+    height: 80px;
+    
 }
 .app1 h1 {
     line-height: 1;
-    font-size: 18px
-    font-size: 16px;
-    margin: 13px 0 9px
+    font-size: 18px font-size: 16px;
+    position: relative;
+    width: 90px;
+    margin: 14px auto;
+    line-height: 1;
+    /* color: #8d8d8d; */
+
+    margin-bottom: 14px;
+    /* font-size: 12px; */
 }
 
 .app2 {
     text-align: center;
     position: relative;
-    margin-top: -13px;
+    margin-top: 7px;
     z-index: 1;
-    padding: 13px 13px
-    
-    
+    /* border-bottom: 1px solid #e5e5e5; */
+    padding: 2px 13px
+}
+
+.app3 {
+    text-align: center;
+    */ position: relative;
+    margin: 0;
+    padding: 1px 3px;
+    display: inline;
+    border: 1px solid #8e8e93;
+    border-radius: 3px;
+    font-size: 9.75px;
+    font-weight: 700;
+    /* color: #8e8e93; */
+    white-space: nowrap;
+    vertical-align: top;
+
 }
 
 .app {
@@ -1203,16 +1231,23 @@ body {
     position: relative;
     margin-top: -13px;
     z-index: 1;
-    padding: 13px 13px
+    padding: 13px 13px;
+    height: 80px;
     
 }
 
 
 .app h1 {
     line-height: 1;
-    font-size: 18px
-    font-size: 16px;
-    margin: 13px 0 9px
+    font-size: 18px font-size: 16px;
+    position: relative;
+    width: 90px;
+    margin: 14px auto;
+    line-height: 1;
+    /* color: #8d8d8d; */
+    margin-bottom: 14px;
+    
+    /* font-size: 12px; */
 }
 
 .app-icon {
@@ -1224,7 +1259,8 @@ body {
     height: 80px;
     vertical-align: middle;
     border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    float: right;
 }
 
 .app-icon img {
@@ -1243,9 +1279,10 @@ body {
     top: 0
 }
 
+
 .app-info {
     position: relative;
-    width: 90px;
+    width: 120px;
     margin: 0 auto;
     line-height: 1;
     color: #8d8d8d;
@@ -1304,16 +1341,15 @@ body {
 .screenshot {
     display: inline-block;
     border-radius: 1px;
-    width: 131px;
-    /* height: 232px; */
-    background: url(//res.static.xiaomi.net/appweb/assets-market-placeholder_31ff92f.png) center center no-repeat;
-    background-color: #efeff0;
+    /* width: 131px; */
+    height: 232px; 
+    background: url(fuwuhao/wutu.jpg) center center no-repeat;
     background-size: 25px 25px;
     overflow: hidden
 }
 
 .screenshot img {
-    border-radius: 1px
+    border-radius: 4px
 }
 
 .app-p {
