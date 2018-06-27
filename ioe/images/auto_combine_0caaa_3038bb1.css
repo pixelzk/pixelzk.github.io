@@ -1,0 +1,1775 @@
+body,ul,h1,h2,h3,p,dl,dd,dt,button {
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+
+body {
+    font: 14px/1.5 miui;
+    background-color: #fff;
+    color: #000;
+    -webkit-user-select: none
+}
+
+h1 {
+    display: block;
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1A1919
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7c7c7c
+}
+
+ul,li {
+    list-style: none
+}
+
+input,button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    outline: 0
+}
+
+html,body {
+    -webkit-text-size-adjust: 100%
+}
+
+a {
+    color: #3f6eb1;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+.cf {
+    *zoom:1}
+
+.cf:before,.cf:after {
+    display: table;
+    content: ""
+}
+
+.cf:after {
+    clear: both
+}
+
+.hide {
+    display: none!important
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.side-blur {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.side-blur:after {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 100%;
+    background-image: linear-gradient(90deg,rgba(248,248,248,0),rgba(248,248,248,.95) 68%,#fff)
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.lazyload {
+    opacity: 0
+}
+
+.lazyload-show {
+    opacity: 1
+}
+
+body .lazyload-nobg {
+    background: 0 0
+}
+
+.lazyload-fadein {
+    position: relative;
+    z-index: 1;
+    transition: opacity .3s linear;
+    opacity: 1
+}
+
+.line-bottom {
+    background-image: linear-gradient(180deg,transparent,transparent 67%,#d3d3d3 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.line-top {
+    background-image: linear-gradient(0deg,transparent,transparent 67%,#d3d3d3 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top
+}
+
+.card {
+    background-color: #fff;
+    border-bottom: 10px solid #efeff0
+}
+
+.card-both {
+    position: relative;
+    top: -1px;
+    background-color: #fff;
+    border-top: 10px solid #efeff0;
+    border-bottom: 10px solid #efeff0
+}
+
+section:first-child .card-both:first-child {
+    border-top: 0;
+    top: 0
+}
+
+.card-font-left {
+    display: inline-block;
+    font-size: 13px;
+    color: #343434;
+    font-weight: 700
+}
+
+.card-font-right {
+    display: inline-block;
+    font-size: 12px;
+    color: #8d8d8d
+}
+
+.pd12 {
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+hr,.hr-mg12 {
+    background-image: linear-gradient(180deg,transparent,transparent 67%,rgba(0,0,0,.15) 67%);
+    border: 0;
+    height: 1px;
+    margin: 0
+}
+
+.hr-mg12 {
+    margin: 0 12px
+}
+
+.scroll-x {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+}
+
+.icon-circle {
+    position: relative
+}
+
+.icon-circle:before {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    border-radius: 100px;
+    width: 300%;
+    height: 300%;
+    transform: scale(0.3333);
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0
+}
+
+.icon-placeholder {
+    position: relative;
+    margin: 0 auto;
+    background: url(log.png) center center no-repeat;
+    background-size: 16px 16px;
+    background-color: #efeff0;
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.icon-placeholder:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 24px;
+    width: calc(300% - 2px);
+    height: calc(300% - 2px);
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0
+}
+
+.container {
+    display: none
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.fadein {
+    display: block;
+    -webkit-animation: fadein .4s ease 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: fadein .4s ease 1;
+    animation-fill-mode: forwards
+}
+
+.banner-ad {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 2px 3px;
+    font-size: 10px;
+    color: rgba(255,255,255,.6);
+    background: rgba(0,0,0,.1);
+    border-radius: 2px;
+    line-height: 1;
+    z-index: 2
+}
+
+.banner-ad:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -1px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,.1);
+    width: calc(300% - 2px);
+    height: calc(300% - 2px);
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0
+}
+
+.horizonal-ad .applist-ad {
+    position: absolute;
+    white-space: nowrap;
+    transform: scale(0.8,.8);
+    -webkit-transform: scale(0.8,.8);
+    margin-left: 0;
+    padding: 2px 3px;
+    line-height: 1;
+    font-size: 6px;
+    top: -2px;
+    color: #b2b2b2
+}
+
+.horizonal-ad .applist-ad:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -1px;
+    border-radius: 6px;
+    border: 1px solid #CCC;
+    width: calc(300% - 2px);
+    height: calc(300% - 2px);
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0
+}
+
+.load,.load-bottom-fix {
+    font-size: 12px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.load {
+    padding: 15px 0;
+    height: 12px;
+    line-height: 1;
+    background: #fff
+}
+
+.load-bottom-fix {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 51px;
+    z-index: 99;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.85) 38%,rgba(255,255,255,1))
+}
+
+.load-bottom-fix span {
+    margin-left: 5px
+}
+
+.icon-loading-small {
+    vertical-align: middle;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(//res.static.xiaomi.net/appweb/c-loading_c74d86a.png) center center no-repeat;
+    background-size: contain;
+    -webkit-animation: auto-circle 1s linear infinite
+}
+
+@-webkit-keyframes auto-circle {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.icon-no-network {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: url(//res.static.xiaomi.net/appweb/c-no_network_d7ca272.png) 0 0 no-repeat;
+    background-size: contain
+}
+
+.load span {
+    vertical-align: middle;
+    margin-left: 3px
+}
+
+.btn-restry {
+    border: 1px solid #ccc;
+    padding: 3px 8px
+}
+
+.load-middle {
+    position: fixed;
+    background: 0 0;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    margin: -45px 0 0 0;
+    z-index: 999;
+    line-height: 2;
+    padding: 0;
+    min-height: 0
+}
+
+.load-middle p {
+    margin: 9px 0
+}
+
+.no-network {
+    margin-top: -55px
+}
+
+.no-network-bottom {
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 13.3px;
+    background: rgba(0,0,0,.75);
+    width: 100%
+}
+
+.no-network-bottom span {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 51px
+}
+
+.no-network-bottom span:first-child {
+    max-width: 218px
+}
+
+.btn-reflesh {
+    border-radius: 27px;
+    border: 1px solid #787878;
+    background: rgba(0,0,0,.2);
+    color: #fff;
+    padding: 8px 21px;
+    line-height: 1
+}
+
+.btn-reflesh:active {
+    background: rgba(0,0,0,.35)
+}
+
+.list dt {
+    display: block;
+    line-height: 1;
+    background-image: linear-gradient(180deg,#fff,#fff 67%,#c6c6c6 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 15px 0 15px 13px
+}
+
+.list dd {
+    position: relative;
+    font-size: 15px;
+    color: #1A1919
+}
+
+.line {
+    position: relative;
+    height: 38px;
+    padding: 7px 0 8px;
+    margin: 0 13px;
+    background-image: linear-gradient(180deg,transparent,transparent 67%,#d3d3d3 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.list dd span {
+    vertical-align: middle
+}
+
+.line:after {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%
+}
+
+.line:before {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 7px;
+    height: 12px;
+    background-image: url(//res.static.xiaomi.net/appweb/assets-arrow_71f0300.png);
+    margin-top: 13px;
+    background-size: 7px auto
+}
+
+.circle {
+    float: right;
+    border-radius: 15px;
+    background: #fe7100;
+    color: #fff;
+    font-size: 12px;
+    margin: 8px 5px 0 0;
+    height: 18px;
+    min-width: 10px;
+    padding: 2px 6px;
+    text-align: center;
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    justify-content: center
+}
+
+.list-icon {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 22px auto;
+    width: 22px;
+    height: 23px;
+    border-radius: 4px
+}
+
+.applist-horizon-item {
+    padding: 16px 0 17px;
+    color: #181818;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    z-index: 0
+}
+
+.applist-horizon-item .tap:before {
+    background-color: #ececec;
+    background-image: none
+}
+
+.applist-horizon-item img {
+    border-radius: 8px;
+    vertical-align: middle;
+    background: #fff
+}
+
+.applist-horizon-item h3 {
+    position: relative;
+    margin: 0 auto;
+    font-size: 13px
+}
+
+.applist-horizon-item .install-btn {
+    width: 52px
+}
+
+.applist-horizon-item .icon-placeholder {
+    margin: 0 auto 8px
+}
+
+.applist-horizon-item .applist-horizon-name {
+    display: inline-block;
+    max-width: 50px;
+    margin: 0 auto;
+    font-size: 13px;
+    vertical-align: top
+}
+
+.applist-horizon-item .icon-star-wrap {
+    display: none;
+    margin: 4px auto 0
+}
+
+.applist-horizon-item .icon-star-light {
+    margin: 0
+}
+
+.applist-horizon-size {
+    display: none;
+    margin: 7px auto 0
+}
+
+.applist-horizon-item .install-btn {
+    padding: 10px 12px;
+    margin: 0 auto;
+    position: relative
+}
+
+.icon-star,.icon-star-light {
+    background-image: url(//res.static.xiaomi.net/appweb/assets-star_e4d9670.png)
+}
+
+.icon-star {
+    background-repeat: repeat-x;
+    background-size: auto 16px;
+    width: 48px;
+    height: 8px;
+    background-position: 0 -8px
+}
+
+.icon-star-light {
+    background-position: 0 0
+}
+
+.icon-star0 .icon-star-light {
+    width: 0
+}
+
+.icon-star1 .icon-star-light {
+    width: 4px
+}
+
+.icon-star2 .icon-star-light {
+    width: 8px
+}
+
+.icon-star3 .icon-star-light {
+    width: 14px
+}
+
+.icon-star4 .icon-star-light {
+    width: 18px
+}
+
+.icon-star5 .icon-star-light {
+    width: 24px
+}
+
+.icon-star6 .icon-star-light {
+    width: 28px
+}
+
+.icon-star7 .icon-star-light {
+    width: 34px
+}
+
+.icon-star8 .icon-star-light {
+    width: 38px
+}
+
+.icon-star9 .icon-star-light {
+    width: 44px
+}
+
+.icon-star10 .icon-star-light {
+    width: 100%
+}
+
+.touch {
+    background: 0 0;
+    border: 0
+}
+
+.touch,.touch-active {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.touch:active .touch-active {
+    display: block
+}
+
+.touch-active {
+    display: none;
+    z-index: -9;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    height: calc(100% + 1px);
+    background-image: linear-gradient(180deg,#fff,#fff 67%,#d3d3d3 67%),linear-gradient(90deg,transparent,transparent 67%,#d3d3d3 67%),linear-gradient(180deg,transparent,transparent 67%,#d3d3d3 67%),linear-gradient(90deg,transparent,transparent 100%),linear-gradient(180deg,#ececec,#ececec 100%);
+    background-size: 100% 1px,1px calc(100% + 1px),100% 1px,1px calc(100% + 1px),100% 100%;
+    background-repeat: no-repeat;
+    background-position: top,right,bottom,left
+}
+
+.tap:before {
+    position: absolute;
+    display: none;
+    content: '';
+    left: 0;
+    top: -1px;
+    z-index: -1;
+    width: 100%;
+    height: calc(100% + 1px);
+    background-image: linear-gradient(180deg,#fff,#fff 67%,#d3d3d3 67%),linear-gradient(90deg,transparent,transparent 67%,#d3d3d3 67%),linear-gradient(180deg,transparent,transparent 67%,#d3d3d3 67%),linear-gradient(90deg,transparent,transparent 100%),linear-gradient(180deg,#ececec,#ececec 100%);
+    background-size: 100% 1px,1px calc(100% + 1px),100% 1px,1px calc(100% + 1px),100% 100%;
+    background-repeat: no-repeat;
+    background-position: top,right,bottom,left
+}
+
+.tap:active:before {
+    display: block
+}
+
+.icon-arrow {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-image: url(//res.static.xiaomi.net/appweb/assets-arrow_71f0300.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.install-btn {
+    width: 50px;
+    height: 28px;
+    padding: 13px 12px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    color: #21b65c
+}
+
+.install-btn .install-btn-display {
+    position: relative;
+    box-sizing: border-box;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.install-btn .install-btn-display:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    z-index: -1;
+    display: block;
+    width: calc(300% - 2px);
+    height: calc(300% - 2px);
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #09ae4a;
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0
+}
+
+.install-progress {
+    left: 0;
+    top: 0;
+    height: 100%;
+    box-sizing: border-box;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(77,212,50,.7);
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease
+}
+
+.install-btn .touch {
+    z-index: 1
+}
+
+.install-btn.install-btn-open {
+    color: #404040
+}
+
+.install-btn.install-btn-open .install-btn-display:before {
+    border-color: #999
+}
+
+.install-btn.install-btn-open .install-progress {
+    display: none
+}
+
+.install-btn.install-btn-progress {
+    color: #7b7b7b
+}
+
+.install-btn.install-btn-progress .install-btn-display:before {
+    background-color: #f7f7f7;
+    border-color: #d2d2d2
+}
+
+.install-btn.install-btn-action {
+    color: rgba(0,0,0,.6)
+}
+
+.install-btn.install-btn-action .install-btn-display:before {
+    background-color: #fafafa;
+    border-color: #d1d1d1
+}
+
+.install-btn.install-btn-action .install-progress {
+    display: none
+}
+
+.install-btn.install-btn-action-pause .install-progress {
+    display: block
+}
+
+.install-btn .touch:active+.install-btn-display:before {
+    background: #ececec
+}
+
+.install-btn .touch[disabled]:active+.install-btn-display:before {
+    background: #fafafa
+}
+
+.rec-apps li {
+    text-align: center;
+    width: 100%
+}
+
+.rec-apps-header {
+    position: relative;
+    z-index: 0;
+    line-height: 1;
+    padding: 15px 13px;
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg,transparent,transparent 67%,#d3d3d3 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.rec-apps-header.tap:before {
+    background-color: #ececec;
+    background-image: none
+}
+
+.rec-apps-more {
+    display: flex;
+    align-items: center
+}
+
+.rec-apps-more .icon-arrow {
+    margin-left: 4px;
+    width: 6px;
+    height: 10px
+}
+
+.rec-apps span {
+    vertical-align: top
+}
+
+.rec-apps ul {
+    margin: 0 13px;
+    display: flex;
+    justify-content: space-around
+}
+
+.rec-apps .applist-horizon-item {
+    padding: 16px 0 17px;
+    color: #181818;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    z-index: 0
+}
+
+.rec-apps .icon-placeholder {
+    margin: 0 auto 8px;
+    width: 60px;
+    height: 60px
+}
+
+.rec-apps .applist-horizon-item img {
+    width: 60px;
+    height: 60px
+}
+
+.rec-apps .applist-horizon-name {
+    display: inline-block;
+    max-width: 65px;
+    margin: 0 auto;
+    font-size: 13px;
+    vertical-align: top
+}
+
+.rec-apps .icon-star-wrap {
+    display: block
+}
+
+.nav-bar {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    width: 100%;
+    padding: 10px 12px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.nav-bar-fadein {
+    background-color: rgba(255,255,255,1);
+    background-image: linear-gradient(180deg,transparent,transparent 67%,rgba(0,0,0,.15) 67%)
+}
+
+.nav-bar .icon-circle {
+    position: relative;
+    display: inline-block;
+    padding: 7px;
+    text-align: center;
+    font-size: 0
+}
+
+.nav-bar-title {
+    font-size: 16px;
+    color: #343434;
+    opacity: 0
+}
+
+.nav-bar svg {
+    vertical-align: middle;
+    fill: #666;
+    width: 13px;
+    height: 13px
+}
+
+.list-pannel h4 {
+    position: relative;
+    padding: 19px 0 8px;
+    margin: 0 13px;
+    background-image: linear-gradient(180deg,transparent,transparent 67%,#d3d3d3 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    vertical-align: middle;
+    line-height: 1
+}
+
+.btn-line {
+    text-align: center;
+    color: #ee5b1a;
+    font-size: 12px;
+    padding: 14px 0;
+    margin: 12px;
+    line-height: 1;
+    background-image: linear-gradient(180deg,#d3d3d3,#fff 2%,#fff 98%,#d3d3d3 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0
+}
+
+.btn-line:active {
+    padding: 14px 12px;
+    margin: 12px 0;
+    background-image: linear-gradient(180deg,#d3d3d3,#ececec 2%,#ececec 98%,#d3d3d3 100%)
+}
+
+.show-more {
+    padding: 14px 0 16px;
+    margin: 0 12px;
+    font-size: 12px;
+    color: #ee5b1a;
+    text-align: center;
+    background-image: linear-gradient(180deg,#fff,#fff 67%,#d3d3d3 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    line-height: 1
+}
+
+.radius-btn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    z-index: 0
+}
+
+.radius-btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border: 1px solid #d3d3d3;
+    width: calc(300%);
+    height: calc(300%);
+    border-radius: 9px;
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0
+}
+
+.radius-btn:active:before {
+    background-color: #ececec
+}
+
+.labels-wrap li {
+    margin: 3px 6px 3px 0;
+    display: inline-block;
+    line-height: 1;
+    font-size: 13px;
+    padding: 10px 14px;
+    color: #fff;
+    border-radius: 3px
+}
+
+.label-orange {
+    background-color: #fea387
+}
+
+.label-green {
+    background-color: #98dc9b
+}
+
+.label-purple {
+    background-color: #a6bde3
+}
+
+.label-blue {
+    background-color: #77d2d8
+}
+
+.label-red {
+    background-color: #f8b0cd
+}
+
+.label-yellow {
+    background-color: #f8c871
+}
+
+.no-index-search-noresult {
+    margin: 100px auto 0;
+    width: 300px;
+    color: #666;
+    text-align: center
+}
+
+.no-index-radius-btn {
+    text-align: left;
+    width: 100%;
+    padding: 10px 0 10px 107px;
+    font-size: 12px;
+    color: #5F5F5F;
+    position: relative;
+    background: 0 0;
+    border: 0
+}
+
+.no-index-radius-btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border: 1px solid #d3d3d3;
+    width: 300%;
+    height: 300%;
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0;
+    border-radius: 1000px
+}
+
+.no-index-radius-btn:active:before {
+    background-color: #ececec
+}
+
+body {
+    padding-bottom: 0px
+}
+
+.modal-backdrop {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 1000
+}
+
+.download-arrow {
+    left: 50%;
+    position: absolute;
+    width: 115px;
+    height: 200px;
+    top: 0;
+    overflow: hidden
+}
+
+.download-arrow:before {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 800px;
+    border: 1px solid #fff;
+    border-radius: 1000px
+}
+
+.download-txt {
+    margin-left: -100px;
+    left: 50%;
+    top: 210px;
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center
+}
+
+.download-arrow:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 18px;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: rotate(116deg);
+    transform-origin: 50% 50%;
+    transform: rotate(-116deg)
+}
+
+.app-banner {
+    font-size: 0;
+    position: relative;
+    width: 100%;
+    padding: 0% 0;
+    background: url(log.png) center center no-repeat;
+    background-size: 40px 40px;
+    background-color: #efeff0
+}
+
+.app-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.app-no-banner1 {
+    padding: 0;
+    background: #fff;
+    height: 30px
+}
+
+.app-no-banner {
+    padding: 0;
+    background: #fff;
+    height: 1px
+}
+
+.app-no-banner2 {
+    padding: 0;
+    background: #fff;
+    height: 105px
+}
+
+.app-no-banner img {
+    display: none
+}
+
+.app1 {
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    z-index: 1;
+    padding: 13px 13px;
+    height: 80px;
+    
+}
+.app1 h1 {
+    line-height: 1;
+    font-size: 18px font-size: 16px;
+    position: relative;
+    width: 90px;
+    margin: 14px auto;
+    line-height: 1;
+    /* color: #8d8d8d; */
+
+    margin-bottom: 14px;
+    /* font-size: 12px; */
+}
+
+.app2 {
+    text-align: center;
+    position: relative;
+    margin-top: 7px;
+    z-index: 1;
+    /* border-bottom: 1px solid #e5e5e5; */
+    padding: 2px 13px
+}
+
+.app3 {
+    text-align: center;
+    */ position: relative;
+    margin: 0;
+    padding: 1px 3px;
+    display: inline;
+    border: 1px solid #8e8e93;
+    border-radius: 3px;
+    font-size: 9.75px;
+    font-weight: 700;
+    /* color: #8e8e93; */
+    white-space: nowrap;
+    vertical-align: top;
+
+}
+
+.app {
+    text-align: center;
+    position: relative;
+    margin-top: -13px;
+    z-index: 1;
+    padding: 13px 13px;
+    height: 80px;
+    
+}
+
+
+.app h1 {
+    line-height: 1;
+    font-size: 18px font-size: 16px;
+    position: relative;
+    width: 90px;
+    margin: 14px auto;
+    line-height: 1;
+    /* color: #8d8d8d; */
+    margin-bottom: 14px;
+    
+    /* font-size: 12px; */
+}
+
+.app-icon {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    background-size: 16px 16px;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    border-radius: 8px;
+    overflow: hidden;
+    float: right;
+}
+
+.app-icon img {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px
+}
+
+.app .icon-star {
+    position: relative;
+    display: inline-block
+}
+
+.app .icon-star-light {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+
+.app-info {
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+    line-height: 1;
+    color: #8d8d8d;
+    margin-bottom: 14px;
+    font-size: 12px
+}
+
+.app-info-l {
+    position: absolute;
+    left: 0;
+    top: -1px
+}
+
+.app-info-r {
+    position: absolute;
+    left: 100%;
+    width: 100px;
+    display: block;
+    text-align: left;
+    top: -1px
+}
+
+.app-info-delimter {
+    display: inline-block;
+    width: 1px;
+    background-color: #b2b2b2;
+    height: 9px;
+    margin: 0 10px
+}
+
+.app-brief {
+    padding: 12px 13px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.scroll-x {
+    border-bottom: 5px solid #fff;
+    font-size: 0
+}
+
+.scroll-x .screenshot {
+    margin-right: 7px
+}
+
+.scroll-x .screenshot:first-child {
+    margin-left: 13px;
+    position: relative
+}
+
+.scroll-x .screenshot:last-child {
+    margin-right: 13px
+}
+
+.screenshot {
+    display: inline-block;
+    border-radius: 1px;
+    /* width: 131px; */
+    height: 232px; 
+    background: url(fuwuhao/wutu.jpg) center center no-repeat;
+    background-size: 25px 25px;
+    overflow: hidden
+}
+
+.screenshot img {
+    border-radius: 4px
+}
+
+.app-p {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #8d8d8d
+}
+
+.pd13 {
+    padding-left: 13px;
+    padding-right: 13px
+}
+
+.app-p p {
+    white-space: pre-line;
+    line-height: 1.4;
+    margin: 9px 0 0;
+    text-align: justify;
+    font-size: 13px
+}
+
+.app-p hr {
+    margin: 17px 0
+}
+
+h3 {
+    line-height: 1;
+    font-size: 14px;
+    margin: 4px 0;
+    color: #343434
+}
+
+.detail-btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    padding: 12px 0;
+    background-color: #fff;
+    font-size: 14px;
+    justify-content: space-around;
+    align-items: center
+}
+
+.detail-btn .icon-circle {
+    display: inline-block;
+    padding: 9px;
+    text-align: center;
+    font-size: 0;
+    margin: 0 20px
+}
+
+.detail-btn .icon-circle:before {
+    color: #b2b2b2
+}
+
+.icon-circle:active:before {
+    border-color: #aeafb3;
+    background: #d9d9d9;
+    z-index: -1
+}
+
+.icon-circle:before {
+    border-color: rgba(204,204,204,.5)
+}
+
+.nav-bar {
+    padding: 10px 13px;
+    opacity: 0
+}
+
+.nav-bar svg {
+    fill: #4a4a4a
+}
+
+.icon-circle:active svg {
+    fill: #fff
+}
+
+.detail-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #666
+}
+
+.favorited:before {
+    border: 2px solid #fbceb3
+}
+
+.favorited svg {
+    fill: #ff753f
+}
+
+.detail-btn .install-btn {
+    position: relative;
+    font-size: 14px;
+    display: block;
+    padding: 0;
+    color: #fff;
+    height: 40px;
+    width: 207px
+}
+
+.detail-btn .install-progress {
+    background-color: #51c422
+}
+
+.detail-btn .install-btn-display {
+    height: 100%;
+    border-radius: 27px
+}
+
+.detail-btn .install-btn-display:before {
+    border-radius: 80px;
+    background: #51c422;
+    border: 1px solid #ccc
+}
+
+.detail-btn .install-btn-progress .install-btn-display:before {
+    background-color: #e8e8e8
+}
+
+.detail-btn .install-btn .touch:active+.install-btn-display:before {
+    background: #50b11c
+}
+
+.detail-btn .install-btn .touch[disabled]:active+.install-btn-display:before {
+    background: #dcdcdc
+}
+
+.detail-btn .install-btn-action,.detail-btn .install-btn-progress {
+    color: rgba(0,0,0,.6)
+}
+
+.detail-btn .install-btn-action .install-btn-display:before {
+    background-color: #e8e8e8
+}
+
+.unfolde {
+    position: relative
+}
+
+.unfold-more {
+    position: absolute;
+    line-height: 1.4;
+    padding-left: 8px;
+    background-image: linear-gradient(90deg,rgba(256,256,256,0),rgba(256,256,256,1) 20%,#fff 100%);
+    right: 0;
+    bottom: 0;
+    color: #ff6d33;
+    font-size: 13px
+}
+
+.card-both {
+    top: 0
+}
+
+.detail-card .rec-apps {
+    background: 0 0;
+    margin-top: 0
+}
+
+.detail-card .rec-apps>h3 {
+    line-height: 1;
+    padding: 15px 13px;
+    margin: 0
+}
+
+.detail-card .rec-apps ul {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    display: block;
+    margin: 0;
+    overflow-x: visible;
+    white-space: nowrap;
+    overflow-y: hidden
+}
+
+.detail-card .rec-apps li {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 1px
+}
+
+.detail-card .rec-apps li:last-child {
+    margin-right: 0
+}
+
+.detail-card .applist-horizon-item {
+    padding: 15px 12px 5px
+}
+
+.detail-card .rec-apps .rec-apps-title {
+    padding: 0;
+    text-align: left
+}
+
+.item1 {
+    display: flex;
+    position: relative;
+    padding: 0 13px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between
+}
+
+.item1:active {
+    background: #ececec
+}
+
+.icon-arrow-r {
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    fill: #b2b2b2
+}
+
+.video-play {
+    display: block;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    z-index: 10;
+    background: url(//res.static.xiaomi.net/appweb/v-video_play_pressed_9d43c86.png) center center no-repeat;
+    background-size: 46px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.card-both {
+    border: 0
+}
+
+.icon-arrow-r-small {
+    width: 10px;
+    vertical-align: top
+}
+
+.card-item {
+    background-image: linear-gradient(180deg,transparent,transparent 67%,#d3d3d3 67%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.card-item:last-child {
+    background: 0 0
+}
+
+.detail-card .item1:active {
+    background: #ececec
+}
+
+.tip {
+    padding: 0 13px 13px;
+    font-size: 13px;
+    color: #8d8d8d
+}
+
+.orange {
+    color: #ff6d33
+}
+
+.nav-bar-fadein {
+    background-color: rgba(255,255,255,0);
+    background-image: linear-gradient(180deg,transparent,transparent 67%,rgba(0,0,0,0) 67%)
+}
+
+.icon-circle {
+    border-radius: 100px;
+    /* background: rgba(255,255,255,.7) */
+}
+
+.list-pannel h4 {
+    line-height: 1;
+    font-size: 14px;
+    margin: 4px 0;
+    color: #343434;
+    background: 0 0;
+    padding: 1px 0 6px
+}
+
+.app-assessment {
+    display: flex;
+    padding: 14px 13px;
+    align-items: center
+}
+
+.app-assessment:active {
+    background: #ececec
+}
+
+
+.app-assessment-icon {
+    border-radius: 50%;
+    position: relative;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    align-self: baseline;
+    margin-top: 2px
+}
+
+.app-assessment-icon:before {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    width: 300%;
+    height: 300%;
+    transform: scale(0.3333);
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0
+}
+
+.app-assessment-icon img {
+    width: 100%;
+    height: 100%
+}
+
+.app-assessment-content {
+    margin-left: 13px;
+    flex: 1
+}
+
+.app-assessment-title {
+    font-size: 14px;
+    color: #343434;
+    line-height: 1.3;
+    margin-bottom: 3px
+}
+
+.app-assessment-desc {
+    font-size: 12px;
+    color: #8d8d8d
+}
+
+.assessment-arrow-r {
+    padding-left: 2px
+}
+
+.labels-wrap li {
+    padding: 9px 14px
+}
+
+.translateY100 {
+    -webkit-transform: translate3d(0px,100px,0);
+    transform: translate3d(0px,100px,0)
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate3d(0px,100px,0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(0px,0,0)
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0px,100px,0)
+    }
+
+    100% {
+        transform: translate3d(0px,0,0)
+    }
+}
+
+.scroll-animate {
+    -webkit-animation: scroll .2s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation: scroll .2s ease;
+    animation-fill-mode: forwards
+}
+
+.icon-placeholder {
+    margin-bottom: 10px
+}
+
+.rec-apps .icon-star {
+    margin: 5px auto 2px
+}
+
+.rec-apps .icon-star .icon-star-light {
+    margin: 0
+}
+
+.screenshot {
+    position: relative
+}
+
+.screenshot:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border: .5px solid #e1e1e1;
+    border-radius: 8px;
+    width: calc(300% - 2px);
+    height: calc(300% - 2px);
+    -webkit-transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0
+}
+
+.app-has-banner {
+    margin-top: -40px
+}
